@@ -1,24 +1,24 @@
 # Market Research Report
 
 ## Top 5 Competitors
-- LinkedIn
-- Indeed
-- Handshake
-- WayUp
-- Glassdoor
+- Too good to go
+- OLIO
+- Karma
+- FlashFood
+- Food Rescue US
 
 ## Key Features (Across Competitors)
-- Job search
-- Easy apply
-- Resume upload
-- Company reviews
-- Salary insights
+- Surplus food listings
+- Discounted purchases
+- Location-based search
+- Food donation options
+- User ratings
 
 ## Unsolved Problems
-- No application status tracker
-- Expired/fake job posts
-- No skill-match score
-- No centralized dashboard
+- No real-time traking of food status
+- limited coverage in smaller areas
+- No impact tracking for users
+- Lack of centralized platform features
 
 ## Our Unique Value
-**One dashboard to track internship applications from search to offer.**
+**One platform to list, buy, and donate surplus food while tracking waste reduction impact end-to-end.**
