@@ -1,29 +1,68 @@
-# Software Requirements Specification
+# Food Waste Management Marketplace
 
-## User Personas
-- **Student** — wants to find and track internships
-- **Career switcher** — wants relevant job matches
-- **Advisor** — wants to help students
+A platform that helps reduce food waste by connecting people and businesses with surplus food to buyers and charities.
 
-## Functional Requirements
-- Sign up / log in
-- Search internships (keyword, location)
-- Save jobs
-- Update application status
-- Upload resume
-- View skill-match score
+---
 
-## Non-Functional Requirements
-- Load time < 2 seconds
-- Mobile friendly
-- Passwords encrypted
+## Overview
+Users can list, search, and manage surplus food, making it easier to save money and reduce waste.
+
+---
+
+## User Roles
+- Household User — lists surplus food  
+- Business Vendor — sells excess food  
+- Buyer — finds affordable food  
+- NGO — collects donations  
+- Admin — manages the platform  
+
+---
+
+## Key Features
+- User authentication (sign up / log in)
+- Create and manage food listings
+- Search and filter listings by location, price, and expiry
+- Reserve or purchase food
+- Track orders or pickups
+- Notifications for expiring items
+
+---
+
+## Requirements
+
+### Functional
+- Search available food listings
+- Save and manage listings
+- Update order status
+- Upload food images
+
+### Non-Functional
+- Fast load time (< 2 seconds)
+- Mobile-friendly design
+- Secure authentication
+
+---
 
 ## User Stories
-- As a student, I want to search internships so I can apply easily.
-- As a student, I want to track my application status so I don't miss updates.
-- As a career switcher, I want skill-match scores so I apply to relevant jobs.
+- Users can list surplus food to reduce waste  
+- Buyers can find affordable nearby food  
+- NGOs can collect food for redistribution  
 
-## Acceptance Criteria (Example)
-- Search returns only internships
-- Each result shows title, company, location
-- Empty search shows "No results found"
+---
+
+## Acceptance Criteria
+- Search shows only available food
+- Results include name, provider, location, and expiry
+- Empty results display: "No food available"
+
+---
+
+## Tech Stack (Example)
+- Frontend: React  
+- Backend: Node.js  
+- Database: MongoDB  
+
+---
+
+## License
+MIT License
