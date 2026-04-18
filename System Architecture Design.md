@@ -60,3 +60,66 @@ The system consists of the following layers:
 ---
 
 ## 5. System Architecture Diagram
+Client (Web Application)
+|
+v
+API Gateway
+|
+v
+| User Service |
+| Food Listing Service |
+| Order Service |
+| Notification Service |
+    |
+    v
+ Database
+
+---
+
+## 6. Data Flow
+
+### 6.1 User Registration
+1. User enters details on frontend  
+2. Request sent to User Service  
+3. Data stored in database  
+4. Confirmation returned  
+
+### 6.2 Food Listing
+1. Seller uploads food details  
+2. Food Listing Service processes request  
+3. Data stored in database  
+
+### 6.3 Order Placement
+1. Buyer selects food item  
+2. Request sent to Order Service  
+3. Order stored in database  
+4. Notification sent to user  
+
+---
+
+## 7. Communication Design
+
+- **Frontend to Backend:** REST API over HTTP  
+- **Backend to Database:** Direct queries  
+- **Internal Communication:** Function/module calls (modular structure)
+
+---
+
+## 8. Non-Functional Requirements Mapping
+
+### Scalability
+- Modular services allow future scaling  
+
+### Security
+- JWT-based authentication  
+- Secure API communication (HTTPS)
+
+### Performance
+- Optimized database queries  
+- Efficient data handling  
+
+---
+
+## 9. Summary
+
+The proposed architecture ensures a scalable, maintainable, and efficient system for reducing food waste by enabling seamless interaction between buyers and sellers.
