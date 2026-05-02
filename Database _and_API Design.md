@@ -49,9 +49,9 @@ CREATE TABLE Orders (
   total DECIMAL(10,2)
 );
 
-//API Specifications
+API Specifications
 
-// Simple Smart Bistro Backend (Single File)
+ Simple Smart Bistro Backend (Single File)
 
 const express = require("express");
 const jwt = require("jsonwebtoken");
@@ -61,7 +61,7 @@ app.use(express.json());
 
 const SECRET = "secret_key";
 
-// ---- Mock Database ----
+Mock Database 
 let users = [
   { id: 1, name: "John", email: "john@email.com", password: "123456" }
 ];
@@ -70,7 +70,7 @@ let orders = [
   { id: 1, user_id: 1, total: 25 }
 ];
 
-// ---- Auth Middleware ----
+Auth Middleware 
 function authenticate(req, res, next) {
   const token = req.headers["authorization"];
 
@@ -85,7 +85,7 @@ function authenticate(req, res, next) {
   }
 }
 
-// ---- AUTH ROUTES ----
+ AUTHORISATION ROUTES 
 
 // Register
 app.post("/api/auth/register", (req, res) => {
@@ -115,7 +115,7 @@ app.post("/api/auth/login", (req, res) => {
   res.json({ token });
 });
 
-// ---- ORDER ROUTES ----
+ ORDER ROUTES
 
 // Create Order
 app.post("/api/orders", authenticate, (req, res) => {
@@ -140,7 +140,7 @@ app.get("/api/orders/:id", authenticate, (req, res) => {
   res.json(order);
 });
 
-// ---- SERVER ----
+// SERVER 
 app.listen(5000, () => {
   console.log("Server running on http://localhost:5000");
 });
